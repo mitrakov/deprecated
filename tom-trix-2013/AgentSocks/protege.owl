@@ -1,0 +1,89 @@
+<?xml version="1.0"?>
+<rdf:RDF xml:base="http://tom-trix.ru" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://tom-trix.ru#" xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#" xmlns:xsp="http://www.owl-ontologies.com/2005/08/07/xsp.owl#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" xmlns:swrl="http://www.w3.org/2003/11/swrl#" xmlns:swrlb="http://www.w3.org/2003/11/swrlb#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+	<owl:Ontology rdf:about=""/>
+	<owl:Class rdf:ID="Potato">
+		<rdfs:subClassOf>
+			<owl:Class rdf:ID="Vegetables"/>
+		</rdfs:subClassOf>
+		<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Картофель</rdfs:comment>
+		<owl:disjointWith>
+			<owl:Class rdf:ID="Carrot"/>
+		</owl:disjointWith>
+		<owl:disjointWith>
+			<owl:Class rdf:ID="Tomato"/>
+		</owl:disjointWith>
+	</owl:Class>
+	<owl:Class rdf:ID="Dairy">
+		<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Молочные продукты</rdfs:comment>
+	</owl:Class>
+	<owl:Class rdf:ID="Milk">
+		<owl:disjointWith>
+			<owl:Class rdf:ID="SourCream"/>
+		</owl:disjointWith>
+		<owl:disjointWith>
+			<owl:Class rdf:ID="Cheese"/>
+		</owl:disjointWith>
+		<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Молоко</rdfs:comment>
+		<rdfs:subClassOf rdf:resource="#Dairy"/>
+	</owl:Class>
+	<owl:Class rdf:about="#SourCream">
+		<rdfs:subClassOf rdf:resource="#Dairy"/>
+		<owl:disjointWith rdf:resource="#Milk"/>
+		<owl:disjointWith>
+			<owl:Class rdf:about="#Cheese"/>
+		</owl:disjointWith>
+		<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Сметана</rdfs:comment>
+	</owl:Class>
+	<owl:Class rdf:ID="Sausage">
+		<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Колбаса</rdfs:comment>
+		<owl:disjointWith>
+			<owl:Class rdf:ID="Beaf"/>
+		</owl:disjointWith>
+		<owl:disjointWith>
+			<owl:Class rdf:ID="Zrazy"/>
+		</owl:disjointWith>
+		<rdfs:subClassOf>
+			<owl:Class rdf:ID="Meat"/>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:about="#Meat">
+		<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Мясные продукты</rdfs:comment>
+	</owl:Class>
+	<owl:Class rdf:about="#Vegetables">
+		<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Овощи</rdfs:comment>
+	</owl:Class>
+	<owl:Class rdf:about="#Beaf">
+		<rdfs:subClassOf rdf:resource="#Meat"/>
+		<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Говядина</rdfs:comment>
+		<owl:disjointWith rdf:resource="#Sausage"/>
+		<owl:disjointWith>
+			<owl:Class rdf:about="#Zrazy"/>
+		</owl:disjointWith>
+	</owl:Class>
+	<owl:Class rdf:about="#Carrot">
+		<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Морковь</rdfs:comment>
+		<owl:disjointWith rdf:resource="#Potato"/>
+		<owl:disjointWith>
+			<owl:Class rdf:about="#Tomato"/>
+		</owl:disjointWith>
+		<rdfs:subClassOf rdf:resource="#Vegetables"/>
+	</owl:Class>
+	<owl:Class rdf:about="#Zrazy">
+		<rdfs:subClassOf rdf:resource="#Meat"/>
+		<owl:disjointWith rdf:resource="#Beaf"/>
+		<owl:disjointWith rdf:resource="#Sausage"/>
+		<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Зразы</rdfs:comment>
+	</owl:Class>
+	<owl:Class rdf:about="#Tomato">
+		<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Томаты</rdfs:comment>
+		<owl:disjointWith rdf:resource="#Carrot"/>
+		<owl:disjointWith rdf:resource="#Potato"/>
+		<rdfs:subClassOf rdf:resource="#Vegetables"/>
+	</owl:Class>
+	<owl:Class rdf:about="#Cheese">
+		<rdfs:subClassOf rdf:resource="#Dairy"/>
+		<owl:disjointWith rdf:resource="#SourCream"/>
+		<owl:disjointWith rdf:resource="#Milk"/>
+		<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Сыр</rdfs:comment>
+	</owl:Class>
+</rdf:RDF><!-- Created with Protege (with OWL Plugin 3.4.7, Build 620)  http://protege.stanford.edu -->

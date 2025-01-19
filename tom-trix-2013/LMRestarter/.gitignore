@@ -1,0 +1,10 @@
+Android/.idea/*
+Android/out/*
+C#/_ReSharper.LMRestarter/*
+C#/LMRestarter/bin/*
+C#/LMRestarter/obj/*
+C#/*.user
+C#/*.suo
+trix.js
+*.iml
+

@@ -1,0 +1,223 @@
+<?xml version="1.0" ?>
+<ru.tomtrix.agentsocks.infrastructure.Model>
+	<__name>Debug</__name>
+	<__nodes class="tree-map">
+		<entry>
+			<int>0</int>
+			<ru.tomtrix.agentsocks.infrastructure.Node>
+				<__container>
+					<__processes class="java.util.concurrent.ConcurrentLinkedDeque" serialization="custom">
+						<unserializable-parents/>
+						<java.util.concurrent.ConcurrentLinkedDeque>
+							<default/>
+							<ru.tomtrix.agentsocks.infrastructure.LogicProcess>
+								<__name>Proc</__name>
+								<__agents>
+									<ru.tomtrix.agentsocks.mathmodel.ProductionAgent>
+										<__name>Buyer</__name>
+										<__state>
+											<string>public Core _core = new AgentProductionCore(this);</string>
+											<string>public RuleSet _ruleset = new RuleSet();</string>
+											<string>Variable _meat = new Variable("meat", VariableType.ASKABLE);</string>
+											<string>Variable _dairy = new Variable("dairy", VariableType.ASKABLE);</string>
+											<string>Variable _vegetables = new Variable("vegetables", VariableType.ASKABLE);</string>
+											<string>Variable _curProduct = new Variable("curProduct", VariableType.ASKABLE);</string>
+											<string>Variable _count = new Variable("count", VariableType.ASKABLE);</string>
+											<string>Variable _decision = new Variable("decision", VariableType.INFERRIBLY_ASKABLE);</string>
+											<string>Variable _shouldTake = new Variable("shouldTake", VariableType.INFERRIBLE);</string>
+											<string>public Random random = new Random(System.currentTimeMillis());</string>
+											<string>public ArrayList cart = new ArrayList(Arrays.asList(new String[] {"milk", "potato"}));</string>
+											<string>public int rack = 0;</string>
+											<string>public int count = 0;</string>
+											<string>public int decision = 0;</string>
+										</__state>
+										<__transformFunctions>
+											<string>public void f1()
+{
+    String[] s = (String[])Environment.get(rack+"");    
+    for (int i=0; i&lt;s.length; i++)
+    {
+        _curProduct.initialize(s[i]);
+        decision = random.nextInt(4);
+        System.out.println("Now _curProduct = " + _curProduct.get_value() + " and decision = " + decision);
+        String t = _core.startConsulting(_shouldTake, _ruleset);
+        System.out.println("Reasoning results: " + t);
+        if ("yes".equals(t))
+        {
+            cart.add(_curProduct.get_value());
+            count++;
+            _count.set_value(count + "");
+        }
+    }
+    System.out.println("Results after rack " + rack);
+    for (int i=0; i&lt;cart.size(); i++)
+        System.out.print(cart.get(i) + "; ");
+    System.out.println("\n\n");
+    rack++;
+}</string>
+										</__transformFunctions>
+										<__eventList>
+											<__eventList class="concurrent-hash-map">
+												<entry>
+													<double>3.0</double>
+													<ru.tomtrix.agentsocks.mathmodel.Function>
+														<__fid>f1</__fid>
+														<__parameters/>
+													</ru.tomtrix.agentsocks.mathmodel.Function>
+												</entry>
+												<entry>
+													<double>0.0</double>
+													<ru.tomtrix.agentsocks.mathmodel.Function>
+														<__fid>initialize</__fid>
+														<__parameters/>
+													</ru.tomtrix.agentsocks.mathmodel.Function>
+												</entry>
+												<entry>
+													<double>9.0</double>
+													<ru.tomtrix.agentsocks.mathmodel.Function>
+														<__fid>f1</__fid>
+														<__parameters/>
+													</ru.tomtrix.agentsocks.mathmodel.Function>
+												</entry>
+												<entry>
+													<double>6.0</double>
+													<ru.tomtrix.agentsocks.mathmodel.Function>
+														<__fid>f1</__fid>
+														<__parameters/>
+													</ru.tomtrix.agentsocks.mathmodel.Function>
+												</entry>
+											</__eventList>
+										</__eventList>
+										<__RAClassname>Buyer</__RAClassname>
+										<__initCode>
+											<string>public void initialize() throws Exception {</string>
+											<string>    Condition cond;
+</string>
+											<string>    _core.addVariable(_shouldTake);
+</string>
+											<string>    _core.addVariable(_decision);
+</string>
+											<string>    _core.addVariable(_count);
+</string>
+											<string>    _core.addVariable(_curProduct);
+</string>
+											<string>    _core.addVariable(_vegetables);
+</string>
+											<string>    _core.addVariable(_dairy);
+</string>
+											<string>    _core.addVariable(_meat);
+</string>
+											<string>    cond = new Condition(new Operand(_decision, Inequality.EQUALS, "0", _core));</string>
+											<string>    cond.addOperand(Operation.AND, new Operand(_curProduct, Inequality.EQUALS, "beaf", _core));</string>
+											<string>    cond.addOperand(Operation.AND, new Operand(_dairy, Inequality.EQUALS, "yes", _core));</string>
+											<string>    _ruleset.addRule(new Rule("R1", cond, _shouldTake, "yes", _core));
+</string>
+											<string>    cond = new Condition(new Operand(_decision, Inequality.EQUALS, "1", _core));</string>
+											<string>    cond.addOperand(Operation.AND, new Operand(_curProduct, Inequality.EQUALS, "sausage", _core));</string>
+											<string>    cond.addOperand(Operation.AND, new Operand(_dairy, Inequality.EQUALS, "yes", _core));</string>
+											<string>    _ruleset.addRule(new Rule("R2", cond, _shouldTake, "yes", _core));
+</string>
+											<string>    cond = new Condition(new Operand(_decision, Inequality.EQUALS, "2", _core));</string>
+											<string>    cond.addOperand(Operation.AND, new Operand(_curProduct, Inequality.EQUALS, "zrazy", _core));</string>
+											<string>    cond.addOperand(Operation.AND, new Operand(_vegetables, Inequality.EQUALS, "yes", _core));</string>
+											<string>    _ruleset.addRule(new Rule("R3", cond, _shouldTake, "yes", _core));
+</string>
+											<string>    cond = new Condition(new Operand(_decision, Inequality.EQUALS, "1", _core));</string>
+											<string>    cond.addOperand(Operation.OR, new Operand(_decision, Inequality.EQUALS, "3", _core));</string>
+											<string>    cond.addOperand(Operation.AND, new Operand(_curProduct, Inequality.EQUALS, "cheese", _core));</string>
+											<string>    cond.addOperand(Operation.AND, new Operand(_meat, Inequality.EQUALS, "yes", _core));</string>
+											<string>    _ruleset.addRule(new Rule("R4", cond, _shouldTake, "yes", _core));
+</string>
+											<string>    cond = new Condition(new Operand(_decision, Inequality.EQUALS, "4", _core));</string>
+											<string>    cond.addOperand(Operation.AND, new Operand(_curProduct, Inequality.EQUALS, "milk", _core));</string>
+											<string>    cond.addOperand(Operation.AND, new Operand(_vegetables, Inequality.EQUALS, "yes", _core));</string>
+											<string>    _ruleset.addRule(new Rule("R5", cond, _shouldTake, "yes", _core));
+</string>
+											<string>    cond = new Condition(new Operand(_decision, Inequality.EQUALS, "0", _core));</string>
+											<string>    cond.addOperand(Operation.AND, new Operand(_curProduct, Inequality.EQUALS, "sourcream", _core));</string>
+											<string>    cond.addOperand(Operation.AND, new Operand(_vegetables, Inequality.EQUALS, "yes", _core));</string>
+											<string>    _ruleset.addRule(new Rule("R6", cond, _shouldTake, "yes", _core));
+</string>
+											<string>    cond = new Condition(new Operand(_decision, Inequality.EQUALS, "1", _core));</string>
+											<string>    cond.addOperand(Operation.AND, new Operand(_curProduct, Inequality.EQUALS, "tomato", _core));</string>
+											<string>    cond.addOperand(Operation.AND, new Operand(_dairy, Inequality.EQUALS, "yes", _core));</string>
+											<string>    _ruleset.addRule(new Rule("R7", cond, _shouldTake, "yes", _core));
+</string>
+											<string>    cond = new Condition(new Operand(_decision, Inequality.EQUALS, "1", _core));</string>
+											<string>    cond.addOperand(Operation.OR, new Operand(_decision, Inequality.EQUALS, "2", _core));</string>
+											<string>    cond.addOperand(Operation.AND, new Operand(_curProduct, Inequality.EQUALS, "potato", _core));</string>
+											<string>    cond.addOperand(Operation.AND, new Operand(_meat, Inequality.EQUALS, "yes", _core));</string>
+											<string>    _ruleset.addRule(new Rule("R8", cond, _shouldTake, "yes", _core));
+</string>
+											<string>    cond = new Condition(new Operand(_decision, Inequality.EQUALS, "3", _core));</string>
+											<string>    cond.addOperand(Operation.AND, new Operand(_curProduct, Inequality.EQUALS, "carrot", _core));</string>
+											<string>    cond.addOperand(Operation.AND, new Operand(_meat, Inequality.EQUALS, "yes", _core));</string>
+											<string>    _ruleset.addRule(new Rule("R9", cond, _shouldTake, "yes", _core));
+</string>
+											<string>    cond = new Condition(new Operand(_count, Inequality.EQUALS, "4", _core));</string>
+											<string>    _ruleset.addRule(new Rule("RR1", cond, _decision, "-1", _core));
+</string>
+											<string>    cond = new Condition(new Operand(_count, Inequality.NOT_EQUALS, "LaLaLa", _core));</string>
+											<string>    _ruleset.addRule(new Rule("RR2", cond, _shouldTake, "no", _core));
+</string>
+											<string>}</string>
+										</__initCode>
+										<__ruleTexts class="linked-list">
+											<string>R1: IF (decision=="0" AND curProduct=="beaf" AND dairy=="yes") THEN {shouldTake = "yes"}</string>
+											<string>R2: IF (decision=="1" AND curProduct=="sausage" AND dairy=="yes") THEN {shouldTake = "yes"}</string>
+											<string>R3: IF (decision=="2" AND curProduct=="zrazy" AND vegetables=="yes") THEN {shouldTake = "yes"}</string>
+											<string>R4: IF (decision=="1" OR decision=="3" AND curProduct=="cheese" AND meat=="yes") THEN {shouldTake = "yes"}</string>
+											<string>R5: IF (decision=="3" AND curProduct=="milk" AND vegetables=="yes") THEN {shouldTake = "yes"}</string>
+											<string>R6: IF (decision=="0" AND curProduct=="sourcream" AND vegetables=="yes") THEN {shouldTake = "yes"}</string>
+											<string>R7: IF (decision=="1" AND curProduct=="tomato" AND dairy=="yes") THEN {shouldTake = "yes"}</string>
+											<string>R8: IF (decision=="1" OR decision=="2" AND curProduct=="potato" AND meat=="yes") THEN {shouldTake = "yes"}</string>
+											<string>R9: IF (decision=="3" AND curProduct=="carrot" AND meat=="yes") THEN {shouldTake = "yes"}</string>
+											<string>RR1: IF (count=="5") THEN {decision = "-1"}</string>
+											<string>RR2: IF (count!="LaLaLa") THEN {shouldTake = "no"}</string>
+										</__ruleTexts>
+									</ru.tomtrix.agentsocks.mathmodel.ProductionAgent>
+								</__agents>
+							</ru.tomtrix.agentsocks.infrastructure.LogicProcess>
+							<null/>
+						</java.util.concurrent.ConcurrentLinkedDeque>
+					</__processes>
+					<__processNames class="tree-map"/>
+					<__node>0</__node>
+					<__threads>4</__threads>
+					<__alive>false</__alive>
+				</__container>
+				<__rank>0</__rank>
+			</ru.tomtrix.agentsocks.infrastructure.Node>
+		</entry>
+	</__nodes>
+	<__environment>
+		<__modelRef reference="../.."/>
+		<__env class="concurrent-hash-map">
+			<entry>
+				<string>0</string>
+				<string-array>
+					<string>beaf</string>
+					<string>sausage</string>
+					<string>cheese</string>
+				</string-array>
+			</entry>
+			<entry>
+				<string>1</string>
+				<string-array>
+					<string>milk</string>
+					<string>sourcream</string>
+					<string>carrot</string>
+				</string-array>
+			</entry>
+			<entry>
+				<string>2</string>
+				<string-array>
+					<string>tomato</string>
+					<string>potato</string>
+					<string>zrazy</string>
+				</string-array>
+			</entry>
+		</__env>
+	</__environment>
+	<__isDebug>true</__isDebug>
+</ru.tomtrix.agentsocks.infrastructure.Model>

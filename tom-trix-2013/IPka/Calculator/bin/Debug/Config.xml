@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Trix>
+  <Main>
+    <Top>69</Top>
+    <Left>31</Left>
+    <Width>1282</Width>
+    <Height>527</Height>
+    <SortSymbols>true</SortSymbols>
+    <WarnDeadline>12</WarnDeadline>
+    <CodeLength>4</CodeLength>
+    <RequestCorrespondence>Приоритетная справка</RequestCorrespondence>
+    <PatentCorrespondence>Решение о выдаче</PatentCorrespondence>
+    <FirstCorrespondence>Материалы заявки</FirstCorrespondence>
+    <SuperCorrespondence>Произвольное письмо</SuperCorrespondence>
+    <ShowButtons>false</ShowButtons>
+    <UseWord2003>false</UseWord2003>
+    <ShowC>false</ShowC>
+    <ShowArchive>false</ShowArchive>
+    <WindowState>Normal</WindowState>
+    <PhysicalField>1. ФИО</PhysicalField>
+    <LegalField>1. Полное наименование</LegalField>
+    <SplitMain>723</SplitMain>
+    <GridMainWidth>20, 23, 100, 46, 63, 217, 124, 100, 90, 100, 100, 100, 100</GridMainWidth>
+    <GridCorrespondenceWidth>42, 100, 100, 100, 100, 100, 100, 100, 100, 63, 183, 12, 100, 193, 100</GridCorrespondenceWidth>
+  </Main>
+  <Calc>
+    <CalcGridAutoWidth>20, 100, 100, 100, 167, 100</CalcGridAutoWidth>
+    <CalcGridManualWidth>20, 100, 100, 100, 100, 100</CalcGridManualWidth>
+    <CalcGridRightWidth>100, 100, 100, 100, 100, 100</CalcGridRightWidth>
+    <CalcLeft>288</CalcLeft>
+    <CalcTop>73</CalcTop>
+    <CalcWidth>900</CalcWidth>
+    <CalcHeight>548</CalcHeight>
+    <CalcSplitMain>385</CalcSplitMain>
+    <CalcSplitLeft>251</CalcSplitLeft>
+  </Calc>
+</Trix>
