@@ -1,0 +1,82 @@
+
+goods.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+Builder
+  rotate: false
+  xy: 2, 2
+  size: 75, 75
+  orig: 75, 75
+  offset: 0, 0
+  index: -1
+ClimbingShoes
+  rotate: false
+  xy: 79, 2
+  size: 75, 75
+  orig: 75, 75
+  offset: 0, 0
+  index: -1
+Grenadier
+  rotate: false
+  xy: 156, 2
+  size: 75, 75
+  orig: 75, 75
+  offset: 0, 0
+  index: -1
+Miner
+  rotate: false
+  xy: 233, 2
+  size: 75, 75
+  orig: 75, 75
+  offset: 0, 0
+  index: -1
+SapperShoes
+  rotate: false
+  xy: 310, 2
+  size: 75, 75
+  orig: 75, 75
+  offset: 0, 0
+  index: -1
+Shaman
+  rotate: false
+  xy: 387, 2
+  size: 75, 75
+  orig: 75, 75
+  offset: 0, 0
+  index: -1
+Snorkel
+  rotate: false
+  xy: 464, 2
+  size: 75, 75
+  orig: 75, 75
+  offset: 0, 0
+  index: -1
+SouthWester
+  rotate: false
+  xy: 541, 2
+  size: 75, 75
+  orig: 75, 75
+  offset: 0, 0
+  index: -1
+Sunglasses
+  rotate: false
+  xy: 618, 2
+  size: 75, 75
+  orig: 75, 75
+  offset: 0, 0
+  index: -1
+TeleportMan
+  rotate: false
+  xy: 695, 2
+  size: 75, 75
+  orig: 75, 75
+  offset: 0, 0
+  index: -1
+VoodooMask
+  rotate: false
+  xy: 772, 2
+  size: 75, 75
+  orig: 75, 75
+  offset: 0, 0
+  index: -1

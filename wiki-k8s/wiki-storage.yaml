@@ -1,0 +1,29 @@
+kind: PersistentVolume
+apiVersion: v1
+metadata:
+  name: wiki-pv
+  namespace: tomsther
+  labels:
+    app: wiki-label
+spec:
+  storageClassName: manual
+  capacity:
+    storage: 5Gi
+  accessModes:
+    - ReadWriteMany
+  hostPath:
+    path: "/mnt/wiki"
+---
+kind: PersistentVolumeClaim
+apiVersion: v1
+metadata:
+  name: wiki-pvc
+  labels:
+    app: wiki-label
+spec:
+  storageClassName: manual
+  accessModes:
+    - ReadWriteMany
+  resources:
+    requests:
+      storage: 5Gi

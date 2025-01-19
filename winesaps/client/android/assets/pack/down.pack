@@ -1,0 +1,117 @@
+
+down.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+Dais0
+  rotate: false
+  xy: 2, 2
+  size: 14, 28
+  orig: 14, 28
+  offset: 0, 0
+  index: -1
+Dais1
+  rotate: false
+  xy: 18, 2
+  size: 14, 28
+  orig: 14, 28
+  offset: 0, 0
+  index: -1
+Dais2
+  rotate: false
+  xy: 34, 2
+  size: 14, 28
+  orig: 14, 28
+  offset: 0, 0
+  index: -1
+Dais3
+  rotate: false
+  xy: 50, 2
+  size: 14, 28
+  orig: 14, 28
+  offset: 0, 0
+  index: -1
+Block0
+  rotate: false
+  xy: 66, 16
+  size: 14, 14
+  orig: 14, 14
+  offset: 0, 0
+  index: -1
+Block0solid
+  rotate: false
+  xy: 66, 16
+  size: 14, 14
+  orig: 14, 14
+  offset: 0, 0
+  index: -1
+Block1
+  rotate: false
+  xy: 82, 16
+  size: 14, 14
+  orig: 14, 14
+  offset: 0, 0
+  index: -1
+Block1solid
+  rotate: false
+  xy: 98, 16
+  size: 14, 14
+  orig: 14, 14
+  offset: 0, 0
+  index: -1
+Block2
+  rotate: false
+  xy: 114, 16
+  size: 14, 14
+  orig: 14, 14
+  offset: 0, 0
+  index: -1
+Block2solid
+  rotate: false
+  xy: 130, 16
+  size: 14, 14
+  orig: 14, 14
+  offset: 0, 0
+  index: -1
+Block3
+  rotate: false
+  xy: 146, 16
+  size: 14, 14
+  orig: 14, 14
+  offset: 0, 0
+  index: -1
+Block3solid
+  rotate: false
+  xy: 162, 16
+  size: 14, 14
+  orig: 14, 14
+  offset: 0, 0
+  index: -1
+Water0
+  rotate: false
+  xy: 178, 16
+  size: 14, 14
+  orig: 14, 14
+  offset: 0, 0
+  index: -1
+Water1
+  rotate: false
+  xy: 194, 16
+  size: 14, 14
+  orig: 14, 14
+  offset: 0, 0
+  index: -1
+Water2
+  rotate: false
+  xy: 210, 16
+  size: 14, 14
+  orig: 14, 14
+  offset: 0, 0
+  index: -1
+Water3
+  rotate: false
+  xy: 226, 16
+  size: 14, 14
+  orig: 14, 14
+  offset: 0, 0
+  index: -1

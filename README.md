@@ -1,2 +1,4 @@
-# deprecated
-All obsolete projects
+# Deprecated projects
+- Winesaps
+- Uber
+- Tommynotes

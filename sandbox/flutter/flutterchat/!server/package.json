@@ -1,0 +1,14 @@
+{
+  "name": "flutterchat-server",
+  "version": "1.0.0",
+  "description": "Flutter Chat Server",
+  "main": "index.js",
+  "dependencies": {
+    "socket.io": "2.2.0"
+  },
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "mitrakov",
+  "license": "MIT"
+}

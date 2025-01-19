@@ -1,0 +1,12 @@
+body {
+  background-color: #FFF5EB;
+}
+
+.centered {
+  text-align: center;
+}
+
+.indented {
+  padding-left: 20%;
+  padding-right: 20%;
+}

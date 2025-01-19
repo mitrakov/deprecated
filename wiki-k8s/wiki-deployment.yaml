@@ -1,0 +1,36 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: wiki
+  namespace: tomsther
+spec:
+  selector:
+    matchLabels:
+      app: wiki-label
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: wiki-label
+    spec:
+      containers:
+        - name: wiki
+          image: requarks/wiki:2
+          securityContext:
+            runAsUser: 0
+          ports:
+            - name: wiki
+              containerPort: 3000
+              protocol: TCP
+          env:
+            - name: DB_TYPE
+              value: sqlite
+            - name: DB_FILEPATH
+              value: /mnt/data/wiki.db
+          volumeMounts:
+            - mountPath: /mnt/data
+              name: wiki-volume
+      volumes:
+        - name: wiki-volume
+          persistentVolumeClaim:
+            claimName: wiki-pvc

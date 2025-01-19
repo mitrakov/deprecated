@@ -1,0 +1,75 @@
+
+icons.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+Cat
+  rotate: false
+  xy: 2, 52
+  size: 70, 70
+  orig: 70, 70
+  offset: 0, 0
+  index: -1
+Hedgehog
+  rotate: false
+  xy: 74, 52
+  size: 70, 70
+  orig: 70, 70
+  offset: 0, 0
+  index: -1
+Rabbit
+  rotate: false
+  xy: 146, 52
+  size: 70, 70
+  orig: 70, 70
+  offset: 0, 0
+  index: -1
+Squirrel
+  rotate: false
+  xy: 218, 52
+  size: 70, 70
+  orig: 70, 70
+  offset: 0, 0
+  index: -1
+Cat48
+  rotate: false
+  xy: 2, 2
+  size: 48, 48
+  orig: 48, 48
+  offset: 0, 0
+  index: -1
+Hedgehog48
+  rotate: false
+  xy: 290, 74
+  size: 48, 48
+  orig: 48, 48
+  offset: 0, 0
+  index: -1
+Rabbit48
+  rotate: false
+  xy: 52, 2
+  size: 48, 48
+  orig: 48, 48
+  offset: 0, 0
+  index: -1
+Squirrel48
+  rotate: false
+  xy: 340, 74
+  size: 48, 48
+  orig: 48, 48
+  offset: 0, 0
+  index: -1
+lives1
+  rotate: false
+  xy: 102, 18
+  size: 44, 32
+  orig: 44, 32
+  offset: 0, 0
+  index: -1
+lives2
+  rotate: false
+  xy: 390, 90
+  size: 44, 32
+  orig: 44, 32
+  offset: 0, 0
+  index: -1

@@ -1,0 +1,53 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: winesaps-web-ingress
+  annotations:
+    kubernetes.io/ingress.class: nginx
+spec:
+  tls:
+  - hosts:
+    - mitrakoff.com
+    secretName: tls-secret
+  - hosts:
+    - wiki.mitrakoff.com
+    secretName: tls-secret-wiki
+  - hosts:
+    - guap.mitrakoff.com
+    secretName: tls-secret-guap
+  defaultBackend:
+    service:
+      name: winesaps-web-service
+      port:
+        number: 80
+  rules:
+    - host: mitrakoff.com
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: winesaps-web-service
+                port:
+                  number: 80
+    - host: wiki.mitrakoff.com
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: wiki-service
+                port:
+                  number: 80
+    - host: guap.mitrakoff.com
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: guap-service
+                port:
+                  number: 80
