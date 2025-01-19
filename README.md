@@ -1,0 +1,2 @@
+# deprecated
+All obsolete projects
