@@ -1,0 +1,12 @@
+apiVersion: cert-manager.io/v1alpha2
+kind: Certificate
+metadata:
+  name: le-crt-wiki
+spec:
+  secretName: tls-secret-wiki
+  issuerRef:
+    kind: Issuer
+    name: letsencrypt
+  commonName: wiki.mitrakoff.com
+  dnsNames:
+    - wiki.mitrakoff.com

@@ -1,0 +1,82 @@
+
+ability.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+Builder
+  rotate: false
+  xy: 2, 2
+  size: 45, 45
+  orig: 45, 45
+  offset: 0, 0
+  index: -1
+ClimbingShoes
+  rotate: false
+  xy: 49, 2
+  size: 45, 45
+  orig: 45, 45
+  offset: 0, 0
+  index: -1
+Grenadier
+  rotate: false
+  xy: 96, 2
+  size: 45, 45
+  orig: 45, 45
+  offset: 0, 0
+  index: -1
+Miner
+  rotate: false
+  xy: 143, 2
+  size: 45, 45
+  orig: 45, 45
+  offset: 0, 0
+  index: -1
+SapperShoes
+  rotate: false
+  xy: 190, 2
+  size: 45, 45
+  orig: 45, 45
+  offset: 0, 0
+  index: -1
+Shaman
+  rotate: false
+  xy: 237, 2
+  size: 45, 45
+  orig: 45, 45
+  offset: 0, 0
+  index: -1
+Snorkel
+  rotate: false
+  xy: 284, 2
+  size: 45, 45
+  orig: 45, 45
+  offset: 0, 0
+  index: -1
+SouthWester
+  rotate: false
+  xy: 331, 2
+  size: 45, 45
+  orig: 45, 45
+  offset: 0, 0
+  index: -1
+Sunglasses
+  rotate: false
+  xy: 378, 2
+  size: 45, 45
+  orig: 45, 45
+  offset: 0, 0
+  index: -1
+TeleportMan
+  rotate: false
+  xy: 425, 2
+  size: 45, 45
+  orig: 45, 45
+  offset: 0, 0
+  index: -1
+VoodooMask
+  rotate: false
+  xy: 472, 2
+  size: 45, 45
+  orig: 45, 45
+  offset: 0, 0
+  index: -1

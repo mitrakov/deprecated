@@ -1,0 +1,33 @@
+
+char.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+Rabbit
+  rotate: false
+  xy: 2, 235
+  size: 160, 274
+  orig: 160, 274
+  offset: 0, 0
+  index: -1
+Squirrel
+  rotate: false
+  xy: 164, 276
+  size: 181, 233
+  orig: 181, 233
+  offset: 0, 0
+  index: -1
+Cat
+  rotate: false
+  xy: 2, 2
+  size: 152, 231
+  orig: 152, 231
+  offset: 0, 0
+  index: -1
+Hedgehog
+  rotate: false
+  xy: 164, 29
+  size: 167, 245
+  orig: 167, 245
+  offset: 0, 0
+  index: -1

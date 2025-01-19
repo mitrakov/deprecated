@@ -1,0 +1,10 @@
+.idea/
+*.exe
+*.iml
+*.class
+*.ini
+rushtester/target/
+highload/target/
+github.com/
+golang.org/
+gopkg.in/
