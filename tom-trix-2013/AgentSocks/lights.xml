@@ -1,0 +1,351 @@
+<?xml version="1.0" ?>
+<ru.tomtrix.agentsocks.infrastructure.Model>
+	<__name>FuckingModel</__name>
+	<__nodes class="tree-map">
+		<entry>
+			<int>0</int>
+			<ru.tomtrix.agentsocks.infrastructure.Node>
+				<__container>
+					<__processes class="java.util.concurrent.ConcurrentLinkedDeque" serialization="custom">
+						<unserializable-parents/>
+						<java.util.concurrent.ConcurrentLinkedDeque>
+							<default/>
+							<ru.tomtrix.agentsocks.infrastructure.LogicProcess>
+								<__name>Proc</__name>
+								<__agents>
+									<ru.tomtrix.agentsocks.mathmodel.DefaultAgent>
+										<__name>TrafficLight</__name>
+										<__state>
+											<string>public String state = "Red";</string>
+										</__state>
+										<__transformFunctions>
+											<string>public void change()
+{
+    if (state.equals("Red")) state = "Green";
+    else state = "Red";
+    Mail.send(new StateChanged("state", state), 1, "Proc", "Pedestrian", "TrafficLight");
+}
+</string>
+										</__transformFunctions>
+										<__eventList>
+											<__eventList class="concurrent-hash-map">
+												<entry>
+													<double>10.0</double>
+													<ru.tomtrix.agentsocks.mathmodel.Function>
+														<__fid>change</__fid>
+														<__parameters/>
+													</ru.tomtrix.agentsocks.mathmodel.Function>
+												</entry>
+												<entry>
+													<double>60.0</double>
+													<ru.tomtrix.agentsocks.mathmodel.Function>
+														<__fid>change</__fid>
+														<__parameters/>
+													</ru.tomtrix.agentsocks.mathmodel.Function>
+												</entry>
+												<entry>
+													<double>30.0</double>
+													<ru.tomtrix.agentsocks.mathmodel.Function>
+														<__fid>change</__fid>
+														<__parameters/>
+													</ru.tomtrix.agentsocks.mathmodel.Function>
+												</entry>
+												<entry>
+													<double>50.0</double>
+													<ru.tomtrix.agentsocks.mathmodel.Function>
+														<__fid>change</__fid>
+														<__parameters/>
+													</ru.tomtrix.agentsocks.mathmodel.Function>
+												</entry>
+												<entry>
+													<double>40.0</double>
+													<ru.tomtrix.agentsocks.mathmodel.Function>
+														<__fid>change</__fid>
+														<__parameters/>
+													</ru.tomtrix.agentsocks.mathmodel.Function>
+												</entry>
+												<entry>
+													<double>20.0</double>
+													<ru.tomtrix.agentsocks.mathmodel.Function>
+														<__fid>change</__fid>
+														<__parameters/>
+													</ru.tomtrix.agentsocks.mathmodel.Function>
+												</entry>
+											</__eventList>
+										</__eventList>
+										<__RAClassname>TrafficLight</__RAClassname>
+									</ru.tomtrix.agentsocks.mathmodel.DefaultAgent>
+								</__agents>
+							</ru.tomtrix.agentsocks.infrastructure.LogicProcess>
+							<null/>
+						</java.util.concurrent.ConcurrentLinkedDeque>
+					</__processes>
+					<__processNames class="tree-map"/>
+					<__node>0</__node>
+					<__threads>4</__threads>
+					<__alive>false</__alive>
+				</__container>
+				<__mail>
+					<__nodeRef reference="../.."/>
+				</__mail>
+				<__rank>0</__rank>
+			</ru.tomtrix.agentsocks.infrastructure.Node>
+		</entry>
+		<entry>
+			<int>1</int>
+			<ru.tomtrix.agentsocks.infrastructure.Node>
+				<__container>
+					<__processes class="java.util.concurrent.ConcurrentLinkedDeque" serialization="custom">
+						<unserializable-parents/>
+						<java.util.concurrent.ConcurrentLinkedDeque>
+							<default/>
+							<ru.tomtrix.agentsocks.infrastructure.LogicProcess>
+								<__name>Proc</__name>
+								<__agents>
+									<ru.tomtrix.agentsocks.mathmodel.ProductionAgent>
+										<__name>Pedestrian</__name>
+										<__state>
+											<string>public Core _core = new AgentProductionCore(this);</string>
+											<string>public RuleSet _ruleset = new RuleSet();</string>
+											<string>public int x = 0;</string>
+											<string>public String state = "unknown";</string>
+											<string>Variable _shouldGo = new Variable("shouldGo", VariableType.INFERRIBLE);</string>
+											<string>Variable _weather = new Variable("weather", VariableType.INFERRIBLE);</string>
+											<string>Variable _state = new Variable("state", VariableType.INFERRIBLY_ASKABLE);</string>
+											<string>Variable _sunny = new Variable("sunny", VariableType.INFERRIBLE);</string>
+										</__state>
+										<__transformFunctions>
+											<string>public void go()
+{
+    x++;
+    System.out.println("x = " + x);
+}</string>
+											<string>public void step()
+{
+    String s = _core.startConsulting(_shouldGo, _ruleset);
+    System.out.println(s);
+    if ("Да".equals(s)) go();
+}</string>
+										</__transformFunctions>
+										<__eventList>
+											<__eventList class="concurrent-hash-map">
+												<entry>
+													<double>48.0</double>
+													<ru.tomtrix.agentsocks.mathmodel.Function>
+														<__fid>step</__fid>
+														<__parameters/>
+													</ru.tomtrix.agentsocks.mathmodel.Function>
+												</entry>
+												<entry>
+													<double>12.0</double>
+													<ru.tomtrix.agentsocks.mathmodel.Function>
+														<__fid>step</__fid>
+														<__parameters/>
+													</ru.tomtrix.agentsocks.mathmodel.Function>
+												</entry>
+												<entry>
+													<double>42.0</double>
+													<ru.tomtrix.agentsocks.mathmodel.Function>
+														<__fid>step</__fid>
+														<__parameters/>
+													</ru.tomtrix.agentsocks.mathmodel.Function>
+												</entry>
+												<entry>
+													<double>60.0</double>
+													<ru.tomtrix.agentsocks.mathmodel.Function>
+														<__fid>step</__fid>
+														<__parameters/>
+													</ru.tomtrix.agentsocks.mathmodel.Function>
+												</entry>
+												<entry>
+													<double>30.0</double>
+													<ru.tomtrix.agentsocks.mathmodel.Function>
+														<__fid>step</__fid>
+														<__parameters/>
+													</ru.tomtrix.agentsocks.mathmodel.Function>
+												</entry>
+												<entry>
+													<double>3.0</double>
+													<ru.tomtrix.agentsocks.mathmodel.Function>
+														<__fid>step</__fid>
+														<__parameters/>
+													</ru.tomtrix.agentsocks.mathmodel.Function>
+												</entry>
+												<entry>
+													<double>0.0</double>
+													<ru.tomtrix.agentsocks.mathmodel.Function>
+														<__fid>initialize</__fid>
+														<__parameters/>
+													</ru.tomtrix.agentsocks.mathmodel.Function>
+												</entry>
+												<entry>
+													<double>33.0</double>
+													<ru.tomtrix.agentsocks.mathmodel.Function>
+														<__fid>step</__fid>
+														<__parameters/>
+													</ru.tomtrix.agentsocks.mathmodel.Function>
+												</entry>
+												<entry>
+													<double>9.0</double>
+													<ru.tomtrix.agentsocks.mathmodel.Function>
+														<__fid>step</__fid>
+														<__parameters/>
+													</ru.tomtrix.agentsocks.mathmodel.Function>
+												</entry>
+												<entry>
+													<double>57.0</double>
+													<ru.tomtrix.agentsocks.mathmodel.Function>
+														<__fid>step</__fid>
+														<__parameters/>
+													</ru.tomtrix.agentsocks.mathmodel.Function>
+												</entry>
+												<entry>
+													<double>39.0</double>
+													<ru.tomtrix.agentsocks.mathmodel.Function>
+														<__fid>step</__fid>
+														<__parameters/>
+													</ru.tomtrix.agentsocks.mathmodel.Function>
+												</entry>
+												<entry>
+													<double>21.0</double>
+													<ru.tomtrix.agentsocks.mathmodel.Function>
+														<__fid>step</__fid>
+														<__parameters/>
+													</ru.tomtrix.agentsocks.mathmodel.Function>
+												</entry>
+												<entry>
+													<double>24.0</double>
+													<ru.tomtrix.agentsocks.mathmodel.Function>
+														<__fid>step</__fid>
+														<__parameters/>
+													</ru.tomtrix.agentsocks.mathmodel.Function>
+												</entry>
+												<entry>
+													<double>45.0</double>
+													<ru.tomtrix.agentsocks.mathmodel.Function>
+														<__fid>step</__fid>
+														<__parameters/>
+													</ru.tomtrix.agentsocks.mathmodel.Function>
+												</entry>
+												<entry>
+													<double>51.0</double>
+													<ru.tomtrix.agentsocks.mathmodel.Function>
+														<__fid>step</__fid>
+														<__parameters/>
+													</ru.tomtrix.agentsocks.mathmodel.Function>
+												</entry>
+												<entry>
+													<double>36.0</double>
+													<ru.tomtrix.agentsocks.mathmodel.Function>
+														<__fid>step</__fid>
+														<__parameters/>
+													</ru.tomtrix.agentsocks.mathmodel.Function>
+												</entry>
+												<entry>
+													<double>27.0</double>
+													<ru.tomtrix.agentsocks.mathmodel.Function>
+														<__fid>step</__fid>
+														<__parameters/>
+													</ru.tomtrix.agentsocks.mathmodel.Function>
+												</entry>
+												<entry>
+													<double>15.0</double>
+													<ru.tomtrix.agentsocks.mathmodel.Function>
+														<__fid>step</__fid>
+														<__parameters/>
+													</ru.tomtrix.agentsocks.mathmodel.Function>
+												</entry>
+												<entry>
+													<double>18.0</double>
+													<ru.tomtrix.agentsocks.mathmodel.Function>
+														<__fid>step</__fid>
+														<__parameters/>
+													</ru.tomtrix.agentsocks.mathmodel.Function>
+												</entry>
+												<entry>
+													<double>6.0</double>
+													<ru.tomtrix.agentsocks.mathmodel.Function>
+														<__fid>step</__fid>
+														<__parameters/>
+													</ru.tomtrix.agentsocks.mathmodel.Function>
+												</entry>
+												<entry>
+													<double>54.0</double>
+													<ru.tomtrix.agentsocks.mathmodel.Function>
+														<__fid>step</__fid>
+														<__parameters/>
+													</ru.tomtrix.agentsocks.mathmodel.Function>
+												</entry>
+											</__eventList>
+										</__eventList>
+										<__RAClassname>Pedestrian</__RAClassname>
+										<__initCode>
+											<string>public void initialize() throws Exception {</string>
+											<string>    Condition cond;
+</string>
+											<string>    _core.addVariable(_sunny);
+</string>
+											<string>    _core.addVariable(_state);
+</string>
+											<string>    _core.addVariable(_weather);
+</string>
+											<string>    _core.addVariable(_shouldGo);
+</string>
+											<string>    cond = new Condition(new Operand(_weather, Inequality.EQUALS, "Хорошая", _core));</string>
+											<string>    cond.addOperand(Operation.AND, new Operand(_state, Inequality.EQUALS, "Green", _core));</string>
+											<string>    _ruleset.addRule(new Rule("R1", cond, _shouldGo, "Да", _core));
+</string>
+											<string>    cond = new Condition(new Operand(_sunny, Inequality.NOT_EQUALS, "Да", _core));</string>
+											<string>    _ruleset.addRule(new Rule("R3", cond, _weather, "Плохая", _core));
+</string>
+											<string>    _sunny.initialize("Да");
+</string>
+											<string>    cond = new Condition(new Operand(_sunny, Inequality.EQUALS, "Да", _core));</string>
+											<string>    cond.addOperand(Operation.OR, new Operand(_sunny, Inequality.EQUALS, "Не знаю", _core));</string>
+											<string>    _ruleset.addRule(new Rule("R4", cond, _weather, "Хорошая", _core));
+</string>
+											<string>    cond = new Condition(new Operand(_state, Inequality.NOT_EQUALS, "Green", _core));</string>
+											<string>    _ruleset.addRule(new Rule("R5", cond, _shouldGo, "Нет", _core));
+</string>
+											<string>}</string>
+										</__initCode>
+										<__ruleTexts class="linked-list">
+											<string>R1: IF (weather=="Хорошая" AND state=="Green") THEN {shouldGo = "Да"}</string>
+											<string>R3: IF (sunny!="Да") THEN {weather = "Плохая"}</string>
+											<string>R4: IF (sunny=="Да" OR sunny=="Не знаю") THEN {weather = "Хорошая"}</string>
+											<string>R5: IF (state!="Green") THEN {shouldGo = "Нет"}</string>
+										</__ruleTexts>
+									</ru.tomtrix.agentsocks.mathmodel.ProductionAgent>
+								</__agents>
+							</ru.tomtrix.agentsocks.infrastructure.LogicProcess>
+							<null/>
+						</java.util.concurrent.ConcurrentLinkedDeque>
+					</__processes>
+					<__processNames class="tree-map"/>
+					<__node>1</__node>
+					<__threads>4</__threads>
+					<__alive>false</__alive>
+				</__container>
+				<__mail>
+					<__nodeRef reference="../.."/>
+				</__mail>
+				<__rank>1</__rank>
+			</ru.tomtrix.agentsocks.infrastructure.Node>
+		</entry>
+	</__nodes>
+	<__environment>
+		<__modelRef reference="../.."/>
+		<__env class="concurrent-hash-map">
+			<entry>
+				<string>0</string>
+				<string-array>
+					<string>beaf</string>
+					<string>sausage</string>
+					<string>cheese</string>
+				</string-array>
+			</entry>
+		</__env>
+	</__environment>
+
+	<__isDebug>false</__isDebug>
+</ru.tomtrix.agentsocks.infrastructure.Model>

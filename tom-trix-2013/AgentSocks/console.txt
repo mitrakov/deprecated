@@ -1,0 +1,46 @@
+create *model (.*)
+createModel 
+load *model (.*)
+loadModel
+save *model (.*)
+saveModel
+show *model
+showModel
+create *node
+createNode
+delete *last *node
+deleteLastNode
+create *process (.*) on (.*)
+createProcess
+rename *process (.*) on (.*) into (.*)
+renameProcess
+move *process (.*) from (.*) to (.*)
+moveProcess
+delete *process (.*) from (.*)
+deleteProcess
+create *agent (.*) in (.*) on (.*)
+createDefaultAgent
+create *production *agent (.*) in (.*) on (.*)
+createProductionAgent
+use *agent (.*) in (.*) on (.*)
+useAgent
+rename *agent *into (.*)
+renameAgent
+move *agent *to (.*) on (.*)
+moveAgent
+delete *agent
+deleteAgent
+add *variable (.*)
+addVariable
+delete *variable (.*)
+deleteVariable
+add *function (.*)
+addFunction
+delete *function (.*)
+deleteFunction
+add *event (.*) on (.*) with (.*)
+addEvent
+delete *event (.*) on (.*)
+deleteEvent
+exit
+exit
