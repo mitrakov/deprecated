@@ -1,0 +1,61 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net9.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <NuGetAudit>False</NuGetAudit>
+    <AssemblyName>Sorex</AssemblyName>
+    <ApplicationIcon>resources\app.ico</ApplicationIcon>
+	<Version>1.0.0</Version>
+	<AssemblyVersion>1.0.0</AssemblyVersion>
+	<Authors>Artem Mitrakov</Authors>
+
+	<!-- attributes visible in exe properties -->
+	<AssemblyTitle>Sorex. Open-source cross-platform note taking app</AssemblyTitle>
+	<FileVersion>1.0.0</FileVersion>
+	<Company>Artem Mitrakov</Company>
+	<ProductName>Sorex application</ProductName>
+	<InformationalVersion>1.0.6</InformationalVersion>
+	<Copyright>Licensed under MIT. mitrakov-artem@yandex.ru</Copyright>
+	<!-- ## -->
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Data.Sqlite" Version="9.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SorexMarkdownLibrary\SorexMarkdownLibrary.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="User.Designer.cs">
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>User.settings</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="User.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>User.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EditorConfigFiles Remove=".editorconfig" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="resources\app.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include=".editorconfig" />
+  </ItemGroup>
+
+</Project>
