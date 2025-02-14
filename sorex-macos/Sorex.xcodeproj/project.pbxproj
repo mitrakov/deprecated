@@ -1,0 +1,684 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		65014A4B2CD3B58400C11F0C /* SorexApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65014A4A2CD3B58400C11F0C /* SorexApp.swift */; };
+		65014A4F2CD3B58600C11F0C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65014A4E2CD3B58600C11F0C /* Assets.xcassets */; };
+		65014A522CD3B58600C11F0C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65014A512CD3B58600C11F0C /* Preview Assets.xcassets */; };
+		65014A5D2CD3B58700C11F0C /* SorexTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65014A5C2CD3B58700C11F0C /* SorexTests.swift */; };
+		65014A672CD3B58700C11F0C /* SorexUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65014A662CD3B58700C11F0C /* SorexUITests.swift */; };
+		65014A692CD3B58700C11F0C /* SorexUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65014A682CD3B58700C11F0C /* SorexUITestsLaunchTests.swift */; };
+		653558D42CD3B6820017288A /* SQLiteDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653558D22CD3B6820017288A /* SQLiteDatabase.swift */; };
+		653558D52CD3B6820017288A /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653558D32CD3B6820017288A /* Note.swift */; };
+		653558DC2CD3B6930017288A /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653558D72CD3B6930017288A /* MainViewModel.swift */; };
+		653558DD2CD3B6930017288A /* ContextMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653558D92CD3B6930017288A /* ContextMenu.swift */; };
+		653558DE2CD3B6930017288A /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653558DA2CD3B6930017288A /* Utils.swift */; };
+		653558DF2CD3B6930017288A /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653558DB2CD3B6930017288A /* MainView.swift */; };
+		653558E52CD3B6C80017288A /* SQLite in Frameworks */ = {isa = PBXBuildFile; productRef = 653558E42CD3B6C80017288A /* SQLite */; };
+		657D54452CD4DF3500662C9D /* MarkdownUI in Frameworks */ = {isa = PBXBuildFile; productRef = 657D54442CD4DF3500662C9D /* MarkdownUI */; };
+		657D544C2CD4F14A00662C9D /* FocusableTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 657D544B2CD4F14A00662C9D /* FocusableTextField.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		65014A592CD3B58700C11F0C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 65014A3F2CD3B58300C11F0C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 65014A462CD3B58400C11F0C;
+			remoteInfo = Sorex;
+		};
+		65014A632CD3B58700C11F0C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 65014A3F2CD3B58300C11F0C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 65014A462CD3B58400C11F0C;
+			remoteInfo = Sorex;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		65014A472CD3B58400C11F0C /* Sorex.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sorex.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		65014A4A2CD3B58400C11F0C /* SorexApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SorexApp.swift; sourceTree = "<group>"; };
+		65014A4E2CD3B58600C11F0C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		65014A512CD3B58600C11F0C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		65014A532CD3B58600C11F0C /* Sorex.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Sorex.entitlements; sourceTree = "<group>"; };
+		65014A582CD3B58700C11F0C /* SorexTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SorexTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		65014A5C2CD3B58700C11F0C /* SorexTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SorexTests.swift; sourceTree = "<group>"; };
+		65014A622CD3B58700C11F0C /* SorexUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SorexUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		65014A662CD3B58700C11F0C /* SorexUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SorexUITests.swift; sourceTree = "<group>"; };
+		65014A682CD3B58700C11F0C /* SorexUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SorexUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		653558D22CD3B6820017288A /* SQLiteDatabase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SQLiteDatabase.swift; sourceTree = "<group>"; };
+		653558D32CD3B6820017288A /* Note.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
+		653558D72CD3B6930017288A /* MainViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		653558D92CD3B6930017288A /* ContextMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContextMenu.swift; sourceTree = "<group>"; };
+		653558DA2CD3B6930017288A /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		653558DB2CD3B6930017288A /* MainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		657D544B2CD4F14A00662C9D /* FocusableTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusableTextField.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		65014A442CD3B58400C11F0C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				653558E52CD3B6C80017288A /* SQLite in Frameworks */,
+				657D54452CD4DF3500662C9D /* MarkdownUI in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		65014A552CD3B58700C11F0C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		65014A5F2CD3B58700C11F0C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		65014A3E2CD3B58300C11F0C = {
+			isa = PBXGroup;
+			children = (
+				65014A492CD3B58400C11F0C /* Sorex */,
+				65014A5B2CD3B58700C11F0C /* SorexTests */,
+				65014A652CD3B58700C11F0C /* SorexUITests */,
+				65014A482CD3B58400C11F0C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		65014A482CD3B58400C11F0C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				65014A472CD3B58400C11F0C /* Sorex.app */,
+				65014A582CD3B58700C11F0C /* SorexTests.xctest */,
+				65014A622CD3B58700C11F0C /* SorexUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		65014A492CD3B58400C11F0C /* Sorex */ = {
+			isa = PBXGroup;
+			children = (
+				653558D82CD3B6930017288A /* view */,
+				653558D62CD3B6930017288A /* viewmodel */,
+				653558D12CD3B6820017288A /* model */,
+				65014A4A2CD3B58400C11F0C /* SorexApp.swift */,
+				653558DA2CD3B6930017288A /* Utils.swift */,
+				65014A4E2CD3B58600C11F0C /* Assets.xcassets */,
+				65014A532CD3B58600C11F0C /* Sorex.entitlements */,
+				65014A502CD3B58600C11F0C /* Preview Content */,
+			);
+			path = Sorex;
+			sourceTree = "<group>";
+		};
+		65014A502CD3B58600C11F0C /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				65014A512CD3B58600C11F0C /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		65014A5B2CD3B58700C11F0C /* SorexTests */ = {
+			isa = PBXGroup;
+			children = (
+				65014A5C2CD3B58700C11F0C /* SorexTests.swift */,
+			);
+			path = SorexTests;
+			sourceTree = "<group>";
+		};
+		65014A652CD3B58700C11F0C /* SorexUITests */ = {
+			isa = PBXGroup;
+			children = (
+				65014A662CD3B58700C11F0C /* SorexUITests.swift */,
+				65014A682CD3B58700C11F0C /* SorexUITestsLaunchTests.swift */,
+			);
+			path = SorexUITests;
+			sourceTree = "<group>";
+		};
+		653558D12CD3B6820017288A /* model */ = {
+			isa = PBXGroup;
+			children = (
+				653558D22CD3B6820017288A /* SQLiteDatabase.swift */,
+				653558D32CD3B6820017288A /* Note.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		653558D62CD3B6930017288A /* viewmodel */ = {
+			isa = PBXGroup;
+			children = (
+				653558D72CD3B6930017288A /* MainViewModel.swift */,
+			);
+			path = viewmodel;
+			sourceTree = "<group>";
+		};
+		653558D82CD3B6930017288A /* view */ = {
+			isa = PBXGroup;
+			children = (
+				653558D92CD3B6930017288A /* ContextMenu.swift */,
+				653558DB2CD3B6930017288A /* MainView.swift */,
+				657D544B2CD4F14A00662C9D /* FocusableTextField.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		65014A462CD3B58400C11F0C /* Sorex */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 65014A6C2CD3B58700C11F0C /* Build configuration list for PBXNativeTarget "Sorex" */;
+			buildPhases = (
+				65014A432CD3B58400C11F0C /* Sources */,
+				65014A442CD3B58400C11F0C /* Frameworks */,
+				65014A452CD3B58400C11F0C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Sorex;
+			packageProductDependencies = (
+				653558E42CD3B6C80017288A /* SQLite */,
+				657D54442CD4DF3500662C9D /* MarkdownUI */,
+			);
+			productName = Sorex;
+			productReference = 65014A472CD3B58400C11F0C /* Sorex.app */;
+			productType = "com.apple.product-type.application";
+		};
+		65014A572CD3B58700C11F0C /* SorexTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 65014A6F2CD3B58700C11F0C /* Build configuration list for PBXNativeTarget "SorexTests" */;
+			buildPhases = (
+				65014A542CD3B58700C11F0C /* Sources */,
+				65014A552CD3B58700C11F0C /* Frameworks */,
+				65014A562CD3B58700C11F0C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				65014A5A2CD3B58700C11F0C /* PBXTargetDependency */,
+			);
+			name = SorexTests;
+			productName = SorexTests;
+			productReference = 65014A582CD3B58700C11F0C /* SorexTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		65014A612CD3B58700C11F0C /* SorexUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 65014A722CD3B58700C11F0C /* Build configuration list for PBXNativeTarget "SorexUITests" */;
+			buildPhases = (
+				65014A5E2CD3B58700C11F0C /* Sources */,
+				65014A5F2CD3B58700C11F0C /* Frameworks */,
+				65014A602CD3B58700C11F0C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				65014A642CD3B58700C11F0C /* PBXTargetDependency */,
+			);
+			name = SorexUITests;
+			productName = SorexUITests;
+			productReference = 65014A622CD3B58700C11F0C /* SorexUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		65014A3F2CD3B58300C11F0C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					65014A462CD3B58400C11F0C = {
+						CreatedOnToolsVersion = 15.2;
+					};
+					65014A572CD3B58700C11F0C = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = 65014A462CD3B58400C11F0C;
+					};
+					65014A612CD3B58700C11F0C = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = 65014A462CD3B58400C11F0C;
+					};
+				};
+			};
+			buildConfigurationList = 65014A422CD3B58300C11F0C /* Build configuration list for PBXProject "Sorex" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 65014A3E2CD3B58300C11F0C;
+			packageReferences = (
+				653558E32CD3B6C80017288A /* XCRemoteSwiftPackageReference "SQLite" */,
+				657D54432CD4DF3500662C9D /* XCRemoteSwiftPackageReference "swift-markdown-ui" */,
+			);
+			productRefGroup = 65014A482CD3B58400C11F0C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				65014A462CD3B58400C11F0C /* Sorex */,
+				65014A572CD3B58700C11F0C /* SorexTests */,
+				65014A612CD3B58700C11F0C /* SorexUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		65014A452CD3B58400C11F0C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65014A522CD3B58600C11F0C /* Preview Assets.xcassets in Resources */,
+				65014A4F2CD3B58600C11F0C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		65014A562CD3B58700C11F0C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		65014A602CD3B58700C11F0C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		65014A432CD3B58400C11F0C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				653558DD2CD3B6930017288A /* ContextMenu.swift in Sources */,
+				653558DF2CD3B6930017288A /* MainView.swift in Sources */,
+				653558D42CD3B6820017288A /* SQLiteDatabase.swift in Sources */,
+				65014A4B2CD3B58400C11F0C /* SorexApp.swift in Sources */,
+				657D544C2CD4F14A00662C9D /* FocusableTextField.swift in Sources */,
+				653558D52CD3B6820017288A /* Note.swift in Sources */,
+				653558DC2CD3B6930017288A /* MainViewModel.swift in Sources */,
+				653558DE2CD3B6930017288A /* Utils.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		65014A542CD3B58700C11F0C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65014A5D2CD3B58700C11F0C /* SorexTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		65014A5E2CD3B58700C11F0C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65014A692CD3B58700C11F0C /* SorexUITestsLaunchTests.swift in Sources */,
+				65014A672CD3B58700C11F0C /* SorexUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		65014A5A2CD3B58700C11F0C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 65014A462CD3B58400C11F0C /* Sorex */;
+			targetProxy = 65014A592CD3B58700C11F0C /* PBXContainerItemProxy */;
+		};
+		65014A642CD3B58700C11F0C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 65014A462CD3B58400C11F0C /* Sorex */;
+			targetProxy = 65014A632CD3B58700C11F0C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		65014A6A2CD3B58700C11F0C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		65014A6B2CD3B58700C11F0C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		65014A6D2CD3B58700C11F0C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGN_ENTITLEMENTS = Sorex/Sorex.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 7;
+				DEVELOPMENT_ASSET_PATHS = "\"Sorex/Preview Content\"";
+				DEVELOPMENT_TEAM = UUK2LMKK3C;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Artem Mitrakov. 2023-2024. mitrakov-artem@yandex.ru. All right reserved.";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MARKETING_VERSION = 24.12.15;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mitrakoff.self.Sorex;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		65014A6E2CD3B58700C11F0C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGN_ENTITLEMENTS = Sorex/Sorex.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 7;
+				DEVELOPMENT_ASSET_PATHS = "\"Sorex/Preview Content\"";
+				DEVELOPMENT_TEAM = UUK2LMKK3C;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Artem Mitrakov. 2023-2024. mitrakov-artem@yandex.ru. All right reserved.";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MARKETING_VERSION = 24.12.15;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mitrakoff.self.Sorex;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		65014A702CD3B58700C11F0C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = UUK2LMKK3C;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.6;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mitrakoff.self.SorexTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Sorex.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Sorex";
+			};
+			name = Debug;
+		};
+		65014A712CD3B58700C11F0C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = UUK2LMKK3C;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.6;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mitrakoff.self.SorexTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Sorex.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Sorex";
+			};
+			name = Release;
+		};
+		65014A732CD3B58700C11F0C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = UUK2LMKK3C;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mitrakoff.self.SorexUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = Sorex;
+			};
+			name = Debug;
+		};
+		65014A742CD3B58700C11F0C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = UUK2LMKK3C;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mitrakoff.self.SorexUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = Sorex;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		65014A422CD3B58300C11F0C /* Build configuration list for PBXProject "Sorex" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				65014A6A2CD3B58700C11F0C /* Debug */,
+				65014A6B2CD3B58700C11F0C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		65014A6C2CD3B58700C11F0C /* Build configuration list for PBXNativeTarget "Sorex" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				65014A6D2CD3B58700C11F0C /* Debug */,
+				65014A6E2CD3B58700C11F0C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		65014A6F2CD3B58700C11F0C /* Build configuration list for PBXNativeTarget "SorexTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				65014A702CD3B58700C11F0C /* Debug */,
+				65014A712CD3B58700C11F0C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		65014A722CD3B58700C11F0C /* Build configuration list for PBXNativeTarget "SorexUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				65014A732CD3B58700C11F0C /* Debug */,
+				65014A742CD3B58700C11F0C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		653558E32CD3B6C80017288A /* XCRemoteSwiftPackageReference "SQLite" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/stephencelis/SQLite.swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.15.3;
+			};
+		};
+		657D54432CD4DF3500662C9D /* XCRemoteSwiftPackageReference "swift-markdown-ui" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/gonzalezreal/swift-markdown-ui";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.4.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		653558E42CD3B6C80017288A /* SQLite */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 653558E32CD3B6C80017288A /* XCRemoteSwiftPackageReference "SQLite" */;
+			productName = SQLite;
+		};
+		657D54442CD4DF3500662C9D /* MarkdownUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 657D54432CD4DF3500662C9D /* XCRemoteSwiftPackageReference "swift-markdown-ui" */;
+			productName = MarkdownUI;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 65014A3F2CD3B58300C11F0C /* Project object */;
+}

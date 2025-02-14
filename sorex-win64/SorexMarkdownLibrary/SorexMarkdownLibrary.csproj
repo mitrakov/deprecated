@@ -1,0 +1,29 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MdXaml.Full" Version="1.27.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="images\edit.png" />
+    <Resource Include="images\archive.png" />
+    <Resource Include="images\restore.png" />
+    <Resource Include="images\delete.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EditorConfigFiles Remove=".editorconfig" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include=".editorconfig" />
+  </ItemGroup>
+
+</Project>
