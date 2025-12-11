@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <data name="edit-note">
+    <value>Редактировать заметку</value>
+  </data>
+  <data name="archive-note">
+    <value>Архивировать заметку</value>
+  </data>
+  <data name="delete-note">
+    <value>Удалить заметку</value>
+  </data>
+  <data name="restore-note">
+    <value>Восстановить из архива</value>
+  </data>
+</root>

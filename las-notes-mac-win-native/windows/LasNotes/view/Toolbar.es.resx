@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <data name="toolbar-h1">
+    <value>Título 1</value>
+  </data>
+  <data name="toolbar-h2">
+    <value>Título 2</value>
+  </data>
+  <data name="toolbar-h3">
+    <value>Título 3</value>
+  </data>
+  <data name="toolbar-bold">
+    <value>Negrita</value>
+  </data>
+  <data name="toolbar-italic">
+    <value>Cursiva</value>
+  </data>
+  <data name="toolbar-underline">
+    <value>Subrayado</value>
+  </data>
+  <data name="toolbar-strike">
+    <value>Tachado</value>
+  </data>
+  <data name="toolbar-ticks">
+    <value>Código en Línea</value>
+  </data>
+  <data name="toolbar-bullet-list">
+    <value>Lista con Viñetas</value>
+  </data>
+  <data name="toolbar-num-list">
+    <value>Lista Numerada</value>
+  </data>
+  <data name="toolbar-quote">
+    <value>Cita</value>
+  </data>
+  <data name="toolbar-link">
+    <value>Enlace</value>
+  </data>
+  <data name="toolbar-code">
+    <value>Código en Bloque</value>
+  </data>
+  <data name="toolbar-rule">
+    <value>Regla Horizontal</value>
+  </data>
+  <data name="toolbar-table">
+    <value>Tabla</value>
+  </data>
+  <data name="toolbar-image">
+    <value>Imagen</value>
+  </data>
+  <data name="toolbar-more">
+    <value>Ayuda con Markdown</value>
+  </data>
+  <data name="toolbar-donate">
+    <value>Apoyar el proyecto</value>
+  </data>
+</root>

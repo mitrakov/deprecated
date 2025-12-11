@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <data name="edit-note">
+    <value>Editar nota</value>
+  </data>
+  <data name="archive-note">
+    <value>Archivar nota</value>
+  </data>
+  <data name="delete-note">
+    <value>Eliminar nota</value>
+  </data>
+  <data name="restore-note">
+    <value>Restaurar desde el archivo</value>
+  </data>
+</root>

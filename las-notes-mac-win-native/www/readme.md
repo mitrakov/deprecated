@@ -1,0 +1,19 @@
+# How to migrate
+- make sure your host is connected to domain lasnotes.com
+- open ports 80 and 443
+- install docker (`snap install docker`)
+- upload `www/` folder to the server (`scp -r www/ root@lasnotes.com:/root/`)
+- unpack `wpdata/` folder from the 7z archive
+- add permissions for `wpdata/` for others (`chmod -R o+w ./wpdata/`)
+- set up the DB password in `.env` file
+- temporarily remove 2 SSL configs from `nginx-conf/` folder
+- run: `docker compose up`, check the log from certbot: `Successfully received certificate.`; `Certificate is saved at: /etc/letsencrypt/live/lasnotes.com/fullchain.pem`
+- run: `docker compose down` to stop and remove all containers
+- replace `--staging` with `--force-renewal` in `compose.yml`
+- remove or comment out `dump.sql` volume in `compose.yml`
+- return 2 SSL configs back to `nginx-conf/` folder
+- run `docker compose up -d`
+- go to https://lasnotes.com/wp-admin and login to Wordpress
+- upload installer files (*.dmg, *.msi) in "Media -> Add New Media File" tab
+- add/update downloads in `Downloads` plugin
+- set up cron (`crontab -e`): `59 10 * * * docker compose run --rm certbot renew > /root/cron.log 2>&1`

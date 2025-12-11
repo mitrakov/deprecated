@@ -1,0 +1,20 @@
+<UserControl x:Class="MdControl.MarkdownSingle"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mdxam="clr-namespace:MdXaml;assembly=MdXaml"
+             xmlns:local="clr-namespace:MdControl"
+             >
+    <UserControl.DataContext>
+        <local:Data/>
+    </UserControl.DataContext>
+
+    <mdxam:MarkdownScrollViewer
+        Markdown="{Binding Markdown}"
+        MarkdownStyleName="GithubLike"
+        VerticalAlignment="Stretch"
+        HorizontalAlignment="Stretch"
+        VerticalScrollBarVisibility="Auto"
+        ClickAction="SafetyDisplayWithRelativePath"
+        >
+    </mdxam:MarkdownScrollViewer>
+</UserControl>

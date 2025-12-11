@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <data name="toolbar-h1">
+    <value>Заголовок 1</value>
+  </data>
+  <data name="toolbar-h2">
+    <value>Заголовок 2</value>
+  </data>
+  <data name="toolbar-h3">
+    <value>Заголовок 3</value>
+  </data>
+  <data name="toolbar-bold">
+    <value>Жирный шрифт</value>
+  </data>
+  <data name="toolbar-italic">
+    <value>Курсив</value>
+  </data>
+  <data name="toolbar-underline">
+    <value>Подчёркнутый</value>
+  </data>
+  <data name="toolbar-strike">
+    <value>Зачёркнутый</value>
+  </data>
+  <data name="toolbar-ticks">
+    <value>Код</value>
+  </data>
+  <data name="toolbar-bullet-list">
+    <value>Маркированный список</value>
+  </data>
+  <data name="toolbar-num-list">
+    <value>Нумерованный список</value>
+  </data>
+  <data name="toolbar-quote">
+    <value>Цитата</value>
+  </data>
+  <data name="toolbar-link">
+    <value>Ссылка</value>
+  </data>
+  <data name="toolbar-code">
+    <value>Блок кода</value>
+  </data>
+  <data name="toolbar-rule">
+    <value>Горизонтальная линия</value>
+  </data>
+  <data name="toolbar-table">
+    <value>Таблица</value>
+  </data>
+  <data name="toolbar-image">
+    <value>Картинка</value>
+  </data>
+  <data name="toolbar-more">
+    <value>Справка по разметке</value>
+  </data>
+  <data name="toolbar-donate">
+    <value>Поддержать проект</value>
+  </data>
+</root>

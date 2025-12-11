@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <data name="menu-file">
+    <value>Archivo</value>
+  </data>
+  <data name="menu-open-recent">
+    <value>Abrir Reciente</value>
+  </data>
+  <data name="menu-new">
+    <value>Nuevo Archivo...</value>
+  </data>
+  <data name="menu-open">
+    <value>Abrir...</value>
+  </data>
+  <data name="menu-set-pin">
+    <value>Establecer código PIN...</value>
+  </data>
+  <data name="menu-close">
+    <value>Cerrar Archivo</value>
+  </data>
+  <data name="menu-exit">
+    <value>Salir de Las Notes</value>
+  </data>
+  <data name="menu-help">
+    <value>Ayuda</value>
+  </data>
+  <data name="menu-about">
+    <value>Acerca de Las Notes...</value>
+  </data>
+  <data name="menu-donate">
+    <value>Apoyar el proyecto</value>
+  </data>
+  <data name="menu-donate-done">
+    <value>Tengo un código de donación</value>
+  </data>
+  <data name="menu-donate-placeholder">
+    <value>Introdúzcalo aquí...</value>
+  </data>
+  <data name="menu-show-digest">
+    <value>Mostrar Resumen al iniciar</value>
+  </data>
+  <data name="new">
+    <value>Nueva</value>
+  </data>
+  <data name="global-search">
+    <value>Búsqueda global (Ctrl+⇧+S)</value>
+  </data>
+  <data name="show-archive">
+    <value>Mostrar Archivo</value>
+  </data>
+  <data name="tags">
+    <value>Etiquetas:</value>
+  </data>
+  <data name="tag1-tag2">
+    <value>Etiqueta1, Etiqueta2, ...</value>
+  </data>
+  <data name="save-note">
+    <value>Guardar (Ctrl+S)</value>
+  </data>
+  <data name="digest">
+    <value>Resumen</value>
+  </data>
+  <data name="msg-about">
+    <value>Autor: Artem Mitrakov (mitrakov-artem@yandex.ru)&#10;Soporte: support@lasnotes.com&#10;Licencia MIT © Todos los derechos reservados</value>
+  </data>
+  <data name="msg-donate-valid">
+    <value>¡Gracias por tu donación! ❤️</value>
+  </data>
+  <data name="msg-donate-invalid">
+    <value>El código de donación no es válido</value>
+  </data>
+  <data name="msg-pin-set">
+    <value>Se ha configurado el código PIN para este archivo de base de datos.&#10;Tu nota se guarda en el portapapeles.</value>
+  </data>
+  <data name="msg-pin-unset">
+    <value>El código PIN se borra</value>
+  </data>
+  <data name="dlg-set-pin-hdr">
+    <value>Establecer código PIN</value>
+  </data>
+  <data name="dlg-set-pin-txt">
+    <value>Introduzca el código PIN de este archivo de base de datos (el archivo se cerrará).&#10;El código PIN vacío apagará la protección.&#10;&#10;NOTA: Se trata de un nivel de protección básico y el archivo no se cifrará.&#10;El cifrado es compatible con plugins.</value>
+  </data>
+  <data name="success">
+    <value>Éxito</value>
+  </data>
+  <data name="error">
+    <value>Error</value>
+  </data>
+  <data name="done">
+    <value>Hecho</value>
+  </data>
+</root>

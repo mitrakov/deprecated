@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <data name="menu-file">
+    <value>Файл</value>
+  </data>
+  <data name="menu-open-recent">
+    <value>Открыть недавние</value>
+  </data>
+  <data name="menu-new">
+    <value>Новый файл...</value>
+  </data>
+  <data name="menu-open">
+    <value>Открыть...</value>
+  </data>
+  <data name="menu-set-pin">
+    <value>Установить PIN-код...</value>
+  </data>
+  <data name="menu-close">
+    <value>Закрыть файл</value>
+  </data>
+  <data name="menu-exit">
+    <value>Выход</value>
+  </data>
+  <data name="menu-help">
+    <value>Помощь</value>
+  </data>
+  <data name="menu-about">
+    <value>О программе...</value>
+  </data>
+  <data name="menu-donate">
+    <value>Поддержать проект</value>
+  </data>
+  <data name="menu-donate-done">
+    <value>У меня есть код спонсора</value>
+  </data>
+  <data name="menu-donate-placeholder">
+    <value>Введите здесь...</value>
+  </data>
+  <data name="menu-show-digest">
+    <value>Показывать Обзор при запуске</value>
+  </data>
+  <data name="new">
+    <value>Новая</value>
+  </data>
+  <data name="global-search">
+    <value>Глобальный поиск (Ctrl+⇧+S)</value>
+  </data>
+  <data name="show-archive">
+    <value>Показать архив</value>
+  </data>
+  <data name="tags">
+    <value>Теги:</value>
+  </data>
+  <data name="tag1-tag2">
+    <value>Тег1, Тег2, ...</value>
+  </data>
+  <data name="save-note">
+    <value>Сохранить (Ctrl+S)</value>
+  </data>
+  <data name="digest">
+    <value>Обзор</value>
+  </data>
+  <data name="msg-about">
+    <value>Автор: Артем Митраков (mitrakov-artem@yandex.ru)&#10;Поддержка: support@lasnotes.com&#10;Лицензия MIT © Все права защищены</value>
+  </data>
+  <data name="msg-donate-valid">
+    <value>Благодарим за помощь проекту! ❤️</value>
+  </data>
+  <data name="msg-donate-invalid">
+    <value>Неверный код</value>
+  </data>
+  <data name="msg-pin-set">
+    <value>Для этого файла БД установлен PIN-код.&#10;Ваша заметка сохранена в буфере обмена.</value>
+  </data>
+  <data name="msg-pin-unset">
+    <value>PIN-код снят</value>
+  </data>
+  <data name="dlg-set-pin-hdr">
+    <value>Установить PIN-код</value>
+  </data>
+  <data name="dlg-set-pin-txt">
+    <value>Введите PIN-код для этого файла БД (файл будет закрыт).&#10;Пустой PIN-код снимет защиту.&#10;&#10;ПРИМЕЧАНИЕ: это базовый уровень защиты, и файл БД не будет зашифрован.&#10;Шифрование поддерживается с помощью плагинов.</value>
+  </data>
+  <data name="success">
+    <value>Выполнено</value>
+  </data>
+  <data name="error">
+    <value>Ошибка</value>
+  </data>
+  <data name="done">
+    <value>Готово</value>
+  </data>
+</root>

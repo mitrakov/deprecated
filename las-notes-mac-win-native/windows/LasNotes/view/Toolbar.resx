@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+
+  <data name="heart1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>images\heart1.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="heart2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>images\heart2.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="toolbar-h1">
+    <value>Heading 1</value>
+  </data>
+  <data name="toolbar-h2">
+    <value>Heading 2</value>
+  </data>
+  <data name="toolbar-h3">
+    <value>Heading 3</value>
+  </data>
+  <data name="toolbar-bold">
+    <value>Bold</value>
+  </data>
+  <data name="toolbar-italic">
+    <value>Italic</value>
+  </data>
+  <data name="toolbar-underline">
+    <value>Underline</value>
+  </data>
+  <data name="toolbar-strike">
+    <value>Strikethrough</value>
+  </data>
+  <data name="toolbar-ticks">
+    <value>Inline Code</value>
+  </data>
+  <data name="toolbar-bullet-list">
+    <value>Bulleted List</value>
+  </data>
+  <data name="toolbar-num-list">
+    <value>Numbered List</value>
+  </data>
+  <data name="toolbar-quote">
+    <value>Blockquote</value>
+  </data>
+  <data name="toolbar-link">
+    <value>Link</value>
+  </data>
+  <data name="toolbar-code">
+    <value>Code block</value>
+  </data>
+  <data name="toolbar-rule">
+    <value>Horizontal Rule</value>
+  </data>
+  <data name="toolbar-table">
+    <value>Table</value>
+  </data>
+  <data name="toolbar-image">
+    <value>Image</value>
+  </data>
+  <data name="toolbar-more">
+    <value>Markdown Help</value>
+  </data>
+  <data name="toolbar-donate">
+    <value>Support the project</value>
+  </data>
+</root>

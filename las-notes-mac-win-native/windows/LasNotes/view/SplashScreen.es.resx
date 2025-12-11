@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <data name="splash-new">
+    <value>Nuevo archivo de DB&#10;(CTRL+N)</value>
+  </data>
+  <data name="splash-open">
+    <value>Abrir archivo de DB&#10;(CTRL+O)</value>
+  </data>
+</root>

@@ -1,0 +1,472 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		651A22FE2D5F44C200681EF6 /* LasNotesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651A22FD2D5F44C200681EF6 /* LasNotesApp.swift */; };
+		651A23022D5F44C500681EF6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 651A23012D5F44C500681EF6 /* Assets.xcassets */; };
+		651A23052D5F44C500681EF6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 651A23042D5F44C500681EF6 /* Preview Assets.xcassets */; };
+		651A23302D5F469E00681EF6 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651A23272D5F469D00681EF6 /* MainViewModel.swift */; };
+		651A23312D5F469E00681EF6 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651A23282D5F469D00681EF6 /* Utils.swift */; };
+		651A23322D5F469E00681EF6 /* SQLiteDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651A232A2D5F469D00681EF6 /* SQLiteDatabase.swift */; };
+		651A23332D5F469E00681EF6 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651A232B2D5F469D00681EF6 /* Note.swift */; };
+		651A23342D5F469E00681EF6 /* ContextMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651A232D2D5F469E00681EF6 /* ContextMenu.swift */; };
+		651A23352D5F469E00681EF6 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651A232E2D5F469E00681EF6 /* MainView.swift */; };
+		651A23392D5F473800681EF6 /* MarkdownUI in Frameworks */ = {isa = PBXBuildFile; productRef = 651A23382D5F473800681EF6 /* MarkdownUI */; };
+		651A233C2D5F476400681EF6 /* SQLite in Frameworks */ = {isa = PBXBuildFile; productRef = 651A233B2D5F476400681EF6 /* SQLite */; };
+		659B4A262D673BCC0096780E /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 659B4A252D673BCC0096780E /* Localizable.xcstrings */; };
+		CE232D812D805E3800BF4D9C /* LasNotesEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE232D802D805E3800BF4D9C /* LasNotesEditor.swift */; };
+		CE969D182D7AEA23001313D2 /* Toolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE969D172D7AEA23001313D2 /* Toolbar.swift */; };
+		CED763562D71BD940063B4BB /* CardWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED763552D71BD940063B4BB /* CardWidget.swift */; };
+		CED763582D71C9650063B4BB /* SplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED763572D71C9650063B4BB /* SplashScreen.swift */; };
+		CEDE3AEF2D9A85AE00BFD9F7 /* Textbox.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDE3AEE2D9A85AE00BFD9F7 /* Textbox.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		651A22FA2D5F44C200681EF6 /* Las Notes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Las Notes.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		651A22FD2D5F44C200681EF6 /* LasNotesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LasNotesApp.swift; sourceTree = "<group>"; };
+		651A23012D5F44C500681EF6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		651A23042D5F44C500681EF6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		651A23062D5F44C500681EF6 /* LasNotes.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LasNotes.entitlements; sourceTree = "<group>"; };
+		651A23272D5F469D00681EF6 /* MainViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		651A23282D5F469D00681EF6 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		651A232A2D5F469D00681EF6 /* SQLiteDatabase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SQLiteDatabase.swift; sourceTree = "<group>"; };
+		651A232B2D5F469D00681EF6 /* Note.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
+		651A232D2D5F469E00681EF6 /* ContextMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContextMenu.swift; sourceTree = "<group>"; };
+		651A232E2D5F469E00681EF6 /* MainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		659B4A252D673BCC0096780E /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
+		CE232D802D805E3800BF4D9C /* LasNotesEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LasNotesEditor.swift; sourceTree = "<group>"; };
+		CE969D172D7AEA23001313D2 /* Toolbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Toolbar.swift; sourceTree = "<group>"; };
+		CED763552D71BD940063B4BB /* CardWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardWidget.swift; sourceTree = "<group>"; };
+		CED763572D71C9650063B4BB /* SplashScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreen.swift; sourceTree = "<group>"; };
+		CEDE3AEE2D9A85AE00BFD9F7 /* Textbox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Textbox.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		651A22F72D5F44C200681EF6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				651A233C2D5F476400681EF6 /* SQLite in Frameworks */,
+				651A23392D5F473800681EF6 /* MarkdownUI in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		651A22F12D5F44C200681EF6 = {
+			isa = PBXGroup;
+			children = (
+				651A22FC2D5F44C200681EF6 /* LasNotes */,
+				651A22FB2D5F44C200681EF6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		651A22FB2D5F44C200681EF6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				651A22FA2D5F44C200681EF6 /* Las Notes.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		651A22FC2D5F44C200681EF6 /* LasNotes */ = {
+			isa = PBXGroup;
+			children = (
+				651A23292D5F469D00681EF6 /* model */,
+				651A23282D5F469D00681EF6 /* Utils.swift */,
+				651A232C2D5F469E00681EF6 /* view */,
+				651A23262D5F469D00681EF6 /* viewmodel */,
+				651A22FD2D5F44C200681EF6 /* LasNotesApp.swift */,
+				651A23012D5F44C500681EF6 /* Assets.xcassets */,
+				651A23062D5F44C500681EF6 /* LasNotes.entitlements */,
+				651A23032D5F44C500681EF6 /* Preview Content */,
+				659B4A252D673BCC0096780E /* Localizable.xcstrings */,
+			);
+			path = LasNotes;
+			sourceTree = "<group>";
+		};
+		651A23032D5F44C500681EF6 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				651A23042D5F44C500681EF6 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		651A23262D5F469D00681EF6 /* viewmodel */ = {
+			isa = PBXGroup;
+			children = (
+				651A23272D5F469D00681EF6 /* MainViewModel.swift */,
+			);
+			path = viewmodel;
+			sourceTree = "<group>";
+		};
+		651A23292D5F469D00681EF6 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				651A232A2D5F469D00681EF6 /* SQLiteDatabase.swift */,
+				651A232B2D5F469D00681EF6 /* Note.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		651A232C2D5F469E00681EF6 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				651A232D2D5F469E00681EF6 /* ContextMenu.swift */,
+				651A232E2D5F469E00681EF6 /* MainView.swift */,
+				CED763552D71BD940063B4BB /* CardWidget.swift */,
+				CED763572D71C9650063B4BB /* SplashScreen.swift */,
+				CE969D172D7AEA23001313D2 /* Toolbar.swift */,
+				CE232D802D805E3800BF4D9C /* LasNotesEditor.swift */,
+				CEDE3AEE2D9A85AE00BFD9F7 /* Textbox.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		651A22F92D5F44C200681EF6 /* LasNotes */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 651A23092D5F44C500681EF6 /* Build configuration list for PBXNativeTarget "LasNotes" */;
+			buildPhases = (
+				651A22F62D5F44C200681EF6 /* Sources */,
+				651A22F72D5F44C200681EF6 /* Frameworks */,
+				651A22F82D5F44C200681EF6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LasNotes;
+			packageProductDependencies = (
+				651A23382D5F473800681EF6 /* MarkdownUI */,
+				651A233B2D5F476400681EF6 /* SQLite */,
+			);
+			productName = LasNotes;
+			productReference = 651A22FA2D5F44C200681EF6 /* Las Notes.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		651A22F22D5F44C200681EF6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					651A22F92D5F44C200681EF6 = {
+						CreatedOnToolsVersion = 15.2;
+					};
+				};
+			};
+			buildConfigurationList = 651A22F52D5F44C200681EF6 /* Build configuration list for PBXProject "LasNotes" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				es,
+				ru,
+			);
+			mainGroup = 651A22F12D5F44C200681EF6;
+			packageReferences = (
+				651A23372D5F473800681EF6 /* XCRemoteSwiftPackageReference "swift-markdown-ui" */,
+				651A233A2D5F476400681EF6 /* XCRemoteSwiftPackageReference "SQLite" */,
+			);
+			productRefGroup = 651A22FB2D5F44C200681EF6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				651A22F92D5F44C200681EF6 /* LasNotes */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		651A22F82D5F44C200681EF6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				651A23052D5F44C500681EF6 /* Preview Assets.xcassets in Resources */,
+				651A23022D5F44C500681EF6 /* Assets.xcassets in Resources */,
+				659B4A262D673BCC0096780E /* Localizable.xcstrings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		651A22F62D5F44C200681EF6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CED763582D71C9650063B4BB /* SplashScreen.swift in Sources */,
+				CE969D182D7AEA23001313D2 /* Toolbar.swift in Sources */,
+				CED763562D71BD940063B4BB /* CardWidget.swift in Sources */,
+				CE232D812D805E3800BF4D9C /* LasNotesEditor.swift in Sources */,
+				651A23332D5F469E00681EF6 /* Note.swift in Sources */,
+				651A23352D5F469E00681EF6 /* MainView.swift in Sources */,
+				651A22FE2D5F44C200681EF6 /* LasNotesApp.swift in Sources */,
+				651A23302D5F469E00681EF6 /* MainViewModel.swift in Sources */,
+				651A23322D5F469E00681EF6 /* SQLiteDatabase.swift in Sources */,
+				651A23342D5F469E00681EF6 /* ContextMenu.swift in Sources */,
+				CEDE3AEF2D9A85AE00BFD9F7 /* Textbox.swift in Sources */,
+				651A23312D5F469E00681EF6 /* Utils.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		651A23072D5F44C500681EF6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		651A23082D5F44C500681EF6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		651A230A2D5F44C500681EF6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = LasNotes/LasNotes.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 11;
+				DEVELOPMENT_ASSET_PATHS = "\"LasNotes/Preview Content\"";
+				DEVELOPMENT_TEAM = UUK2LMKK3C;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Las Notes";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MARKETING_VERSION = 1.2.3;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mitrakoff.lasnotes;
+				PRODUCT_NAME = "Las Notes";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		651A230B2D5F44C500681EF6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = LasNotes/LasNotes.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 11;
+				DEVELOPMENT_ASSET_PATHS = "\"LasNotes/Preview Content\"";
+				DEVELOPMENT_TEAM = UUK2LMKK3C;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Las Notes";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MARKETING_VERSION = 1.2.3;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mitrakoff.lasnotes;
+				PRODUCT_NAME = "Las Notes";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		651A22F52D5F44C200681EF6 /* Build configuration list for PBXProject "LasNotes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				651A23072D5F44C500681EF6 /* Debug */,
+				651A23082D5F44C500681EF6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		651A23092D5F44C500681EF6 /* Build configuration list for PBXNativeTarget "LasNotes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				651A230A2D5F44C500681EF6 /* Debug */,
+				651A230B2D5F44C500681EF6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		651A23372D5F473800681EF6 /* XCRemoteSwiftPackageReference "swift-markdown-ui" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/gonzalezreal/swift-markdown-ui";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.4.1;
+			};
+		};
+		651A233A2D5F476400681EF6 /* XCRemoteSwiftPackageReference "SQLite" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/stephencelis/SQLite.swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.15.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		651A23382D5F473800681EF6 /* MarkdownUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 651A23372D5F473800681EF6 /* XCRemoteSwiftPackageReference "swift-markdown-ui" */;
+			productName = MarkdownUI;
+		};
+		651A233B2D5F476400681EF6 /* SQLite */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 651A233A2D5F476400681EF6 /* XCRemoteSwiftPackageReference "SQLite" */;
+			productName = SQLite;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 651A22F22D5F44C200681EF6 /* Project object */;
+}

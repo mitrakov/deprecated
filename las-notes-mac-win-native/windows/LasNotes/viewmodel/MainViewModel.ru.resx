@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <data name="msg-archive-hdr">
+    <value>Архивировать заметку</value>
+  </data>
+  <data name="msg-archive-txt">
+    <value>Уверены, что хотите архивировать эту заметку?&#10;Она может быть восстановлена позже</value>
+  </data>
+  <data name="msg-delete-hdr">
+    <value>Удалить заметку</value>
+  </data>
+  <data name="msg-delete-txt">
+    <value>Уверены, что хотите удалить эту заметку?</value>
+  </data>
+  <data name="msg-tag-needed-hdr">
+    <value>Требуется тег</value>
+  </data>
+  <data name="msg-tag-needed-txt">
+    <value>Добавьте хотя бы 1 тег, напр. "Работа" или "Дом"</value>
+  </data>
+  <data name="msg-note-added">
+    <value>Заметка добавлена</value>
+  </data>
+  <data name="msg-note-updated">
+    <value>Заметка обновлена</value>
+  </data>
+  <data name="msg-invalid-pin">
+    <value>Неверный PIN-код</value>
+  </data>
+  <data name="error">
+    <value>Ошибка</value>
+  </data>
+  <data name="done">
+    <value>Готово</value>
+  </data>
+  <data name="file-not-found">
+    <value>Файл не найден:</value>
+  </data>
+  <data name="dlg-select-file">
+    <value>Выберите файл БД</value>
+  </data>
+  <data name="dlg-new-file">
+    <value>Новый файл БД</value>
+  </data>
+  <data name="dlg-filter-open">
+    <value>Файлы БД Las Notes (*.db)|*.db|Все файлы (*.*)|*.*</value>
+  </data>
+  <data name="dlg-filter-save">
+    <value>Файлы БД Las Notes (*.db)|*.db</value>
+  </data>
+  <data name="dlg-input-pin-hdr">
+    <value>PIN-код</value>
+  </data>
+  <data name="dlg-input-pin-txt">
+    <value>Введите PIN-код для этого файла БД:</value>
+  </data>
+</root>

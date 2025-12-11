@@ -1,0 +1,50 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net9.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <ApplicationIcon>resources\app.ico</ApplicationIcon>
+    <NuGetAudit>False</NuGetAudit>
+    <AssemblyName>Las Notes</AssemblyName>
+    <Version>1.2.1</Version>
+    <AssemblyVersion>1.2.1</AssemblyVersion>
+    <FileVersion>1.2.1</FileVersion>
+    <InformationalVersion>1.2.1</InformationalVersion>
+    <Authors>Artem Mitrakov</Authors>
+    <AssemblyTitle>Las Notes</AssemblyTitle>
+    <Company>Artem Mitrakov</Company>
+    <ProductName>Las Notes</ProductName>
+    <Copyright>Artem Mitrakov. mitrakov-artem@yandex.ru. Licensed by MIT</Copyright>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="resources\app.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Data.Sqlite" Version="9.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MdControl\MdControl.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="User.Designer.cs">
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>User.settings</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="User.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>User.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+
+</Project>

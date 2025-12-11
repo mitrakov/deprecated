@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <data name="msg-archive-hdr">
+    <value>Archivar nota</value>
+  </data>
+  <data name="msg-archive-txt">
+    <value>¿Estás seguro de que deseas archivar esta nota?&#10;Se puede restaurar más tarde</value>
+  </data>
+  <data name="msg-delete-hdr">
+    <value>Eliminar nota</value>
+  </data>
+  <data name="msg-delete-txt">
+    <value>¿Estás seguro que deseas eliminar esta nota?</value>
+  </data>
+  <data name="msg-tag-needed-hdr">
+    <value>Etiqueta requerida</value>
+  </data>
+  <data name="msg-tag-needed-txt">
+    <value>Agregue al menos una etiqueta, por ejemplo, "Trabajo" o "Casa"</value>
+  </data>
+  <data name="msg-note-added">
+    <value>Nota añadida</value>
+  </data>
+  <data name="msg-note-updated">
+    <value>Nota actualizada</value>
+  </data>
+  <data name="msg-invalid-pin">
+    <value>Código PIN no válido</value>
+  </data>
+  <data name="error">
+    <value>Error</value>
+  </data>
+  <data name="done">
+    <value>Hecho</value>
+  </data>
+  <data name="file-not-found">
+    <value>No se encuentra el archivo:</value>
+  </data>
+  <data name="dlg-select-file">
+    <value>Seleccione archivo de base de datos</value>
+  </data>
+  <data name="dlg-new-file">
+    <value>Nuevo archivo de base de datos</value>
+  </data>
+  <data name="dlg-filter-open">
+    <value>Archivos de Las Notes (*.db)|*.db|Todos los archivos (*.*)|*.*</value>
+  </data>
+  <data name="dlg-filter-save">
+    <value>Archivos de Las Notes (*.db)|*.db</value>
+  </data>
+  <data name="dlg-input-pin-hdr">
+    <value>Código PIN</value>
+  </data>
+  <data name="dlg-input-pin-txt">
+    <value>Ingresa el código PIN para este archivo de base de datos:</value>
+  </data>
+</root>

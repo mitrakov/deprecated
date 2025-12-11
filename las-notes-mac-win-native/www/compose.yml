@@ -1,0 +1,50 @@
+services:
+  db:
+    image: mysql:9.2.0
+    container_name: db
+    restart: unless-stopped
+    environment:
+      - MYSQL_DATABASE=wordpress
+      - MYSQL_ROOT_PASSWORD=${DB_PASSWORD}
+    volumes:
+      - ./dbdata:/var/lib/mysql
+      - ./dump.sql:/docker-entrypoint-initdb.d/dump.sql
+
+  wordpress:
+    depends_on:
+      - db
+    image: wordpress:6.7.1-fpm
+    container_name: wordpress
+    restart: unless-stopped
+    environment:
+      - WORDPRESS_DB_HOST=db
+      - WORDPRESS_DB_USER=root
+      - WORDPRESS_DB_PASSWORD=${DB_PASSWORD}
+      - WORDPRESS_DB_NAME=wordpress
+    volumes:
+      - ./wpdata:/var/www/html
+      - ./uploads.ini:/usr/local/etc/php/conf.d/uploads.ini
+
+  webserver:
+    depends_on:
+      - wordpress
+    image: nginx:1.27.3
+    container_name: webserver
+    restart: unless-stopped
+    ports:
+      - 80:80
+      - 443:443
+    volumes:
+      - ./wpdata:/var/www/html
+      - ./nginx-conf:/etc/nginx/conf.d
+      - ./cbdata:/etc/letsencrypt
+
+  certbot: # --renew-hook works inside Docker container (not in Docker host!)
+    depends_on:
+      - webserver
+    image: certbot/certbot
+    container_name: certbot
+    volumes:
+      - ./cbdata:/etc/letsencrypt
+      - ./wpdata:/var/www/html
+    command: certonly --webroot --webroot-path=/var/www/html --email mitrakov-artem@yandex.ru --agree-tos --staging -d lasnotes.com --renew-hook "echo Done"

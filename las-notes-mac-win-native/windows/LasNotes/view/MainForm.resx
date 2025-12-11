@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+
+  <data name="plus" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>images\plus.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="plus-circle" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>images\plus-circle.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="mark-circle" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>images\mark-circle.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="heart" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>images\heart2.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\app.ico;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="menu-file">
+    <value>File</value>
+  </data>
+  <data name="menu-open-recent">
+    <value>Open Recent</value>
+  </data>
+  <data name="menu-new">
+    <value>New File...</value>
+  </data>
+  <data name="menu-open">
+    <value>Open...</value>
+  </data>
+  <data name="menu-set-pin">
+    <value>Set PIN code...</value>
+  </data>
+  <data name="menu-close">
+    <value>Close File</value>
+  </data>
+  <data name="menu-exit">
+    <value>Quit Las Notes</value>
+  </data>
+  <data name="menu-help">
+    <value>Help</value>
+  </data>
+  <data name="menu-about">
+    <value>About Las Notes...</value>
+  </data>
+  <data name="menu-donate">
+    <value>Support the project</value>
+  </data>
+  <data name="menu-donate-done">
+    <value>I have a donation code</value>
+  </data>
+  <data name="menu-donate-placeholder">
+    <value>Input here...</value>
+  </data>
+  <data name="menu-show-digest">
+    <value>Show Digest on startup</value>
+  </data>
+  <data name="new">
+    <value>New</value>
+  </data>
+  <data name="global-search">
+    <value>Global search (Ctrl+⇧+S)</value>
+  </data>
+  <data name="show-archive">
+    <value>Show Archive</value>
+  </data>
+  <data name="tags">
+    <value>Tags:</value>
+  </data>
+  <data name="tag1-tag2">
+    <value>Tag1, Tag2, ...</value>
+  </data>
+  <data name="save-note">
+    <value>Save (Ctrl+S)</value>
+  </data>
+  <data name="digest">
+    <value>Digest</value>
+  </data>
+  <data name="msg-about">
+    <value>Author: Artem Mitrakov (mitrakov-artem@yandex.ru)&#10;Support: support@lasnotes.com&#10;Licensed under MIT © All rights reserved</value>
+  </data>
+  <data name="msg-donate-valid">
+    <value>Thanks for your donation! ❤️</value>
+  </data>
+  <data name="msg-donate-invalid">
+    <value>Donation code is invalid</value>
+  </data>
+  <data name="msg-pin-set">
+    <value>PIN code is set for this DB file.&#10;Your note is saved to the clipboard.</value>
+  </data>
+  <data name="msg-pin-unset">
+    <value>PIN code is unset</value>
+  </data>
+  <data name="dlg-set-pin-hdr">
+    <value>Set PIN code</value>
+  </data>
+  <data name="dlg-set-pin-txt">
+    <value>Input PIN code for this DB file (the file will be closed).&#10;Empty PIN code will discard the protection.&#10;&#10;NOTE: it's a basic protection level and the DB file will not be encrypted.&#10;The encryption is supported by plugins.</value>
+  </data>
+  <data name="success">
+    <value>Success</value>
+  </data>
+  <data name="error">
+    <value>Error</value>
+  </data>
+  <data name="done">
+    <value>Done</value>
+  </data>
+</root>
